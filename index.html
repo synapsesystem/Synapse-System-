@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synapse Systems | AI Software & Automation</title>
+<meta name="description" content="Synapse Systems builds AI software, automation systems and intelligent digital products for modern South African businesses.">
+<meta property="og:title" content="Synapse Systems | AI Software & Automation">
+<meta property="og:description" content="Connecting Intelligence. Building the Future.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;0,800;1,700;1,800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader"><div class="ll"><div class="ll-logo">SS</div><div class="ll-wrap"><div class="ll-bar"></div></div><div class="ll-txt">Initializing Intelligence...</div></div></div>
+
+<!-- CURSOR -->
+<div id="cd"></div><div id="cr"></div>
+
+<!-- WA BUBBLE -->
+<a class="wab" href="https://wa.me/27677723822?text=Hi%20Synapse%20Systems%2C%20I%27d%20like%20to%20enquire%20about%20your%20services." target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.116 1.522 5.85L.057 23.27a.75.75 0 00.916.927l5.565-1.457A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.693 9.693 0 01-4.964-1.365l-.355-.212-3.683.965.983-3.586-.232-.369A9.693 9.693 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+  <span class="wtt">Chat with us</span>
+</a>
+
+<!-- BACK TOP -->
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<!-- MOBILE NAV -->
+<nav class="mnav" id="mnav">
+  <button class="mnx" onclick="closeMnav()">✕</button>
+  <a href="#home" onclick="closeMnav()">Home</a>
+  <a href="#services" onclick="closeMnav()">Services</a>
+  <a href="#products" onclick="closeMnav()">Products</a>
+  <a href="#about" onclick="closeMnav()">About</a>
+  <a href="#why" onclick="closeMnav()">Why Us</a>
+  <a href="#roadmap" onclick="closeMnav()">Roadmap</a>
+  <a href="#blog" onclick="closeMnav()">Blog</a>
+  <a href="#contact" onclick="closeMnav()">Contact</a>
+  <a href="pricing.html" class="mncta">View Pricing →</a>
+</nav>
+
+<!-- HEADER -->
+<header id="hdr">
+  <a href="#home" class="logo">Synapse <span>Systems</span></a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#why">Why Us</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+    <a href="pricing.html" class="ncta">Pricing</a>
+  </nav>
+  <div class="hr">
+    <button class="tbtn" onclick="toggleTheme()">🌙</button>
+    <button class="hbg" id="hbg" onclick="toggleMnav()"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <canvas id="aibg"></canvas>
+  <div class="hc">
+    <div class="hbadge"><div class="hbdot"></div>Now accepting new clients — 2026</div>
+    <h2>Connecting <em>Intelligence.</em><br>Building the Future.</h2>
+    <p>Synapse Systems delivers AI-driven digital products, automation systems, and intelligent business solutions for modern enterprises.</p>
+    <div class="hbtns">
+      <button class="bp" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+      <button class="bo" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Our Services</button>
+    </div>
+  </div>
+  <div class="fmeta">Synapse Systems &nbsp;•&nbsp; Est. 2026 &nbsp;•&nbsp; Connecting Intelligence</div>
+  <div class="scind"><div class="scline"></div></div>
+</section>
+
+<!-- STATS -->
+<section class="stats"><div class="si">
+  <div class="stat"><h3>12+</h3><p>AI Prototypes</p></div>
+  <div class="stat"><h3>20+</h3><p>Systems Designed</p></div>
+  <div class="stat"><h3>6</h3><p>Products Live</p></div>
+  <div class="stat"><h3>2026</h3><p>Founded</p></div>
+</div></section>
+
+<!-- SERVICES -->
+<section id="services"><div class="inn">
+  <div class="rv"><div class="sl">What We Do</div><h2 class="st">Our Services</h2><p class="ss">We build intelligent systems and digital products that drive real business results.</p></div>
+  <div class="sg rv">
+    <div class="card gc"><span class="ci">🤖</span><h3>AI Software Solutions</h3><p>Custom AI tools that streamline operations, automate decisions, and optimize your business workflows.</p></div>
+    <div class="card gc"><span class="ci">⚙️</span><h3>Automation & Robotics</h3><p>Intelligent automation systems that eliminate repetitive tasks and scale your enterprise operations.</p></div>
+    <div class="card gc"><span class="ci">📊</span><h3>Business Consulting</h3><p>Data-driven strategy and digital consulting to position your business ahead of the competition.</p></div>
+    <div class="card gc" onclick="openPricingModal()" style="cursor:pointer;" title="Click to view pricing"><span class="ci">🌐</span><h3>Website Development</h3><p>Modern, high-performance websites and web apps built to convert visitors into loyal customers.</p><div style="margin-top:12px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--or);display:flex;align-items:center;gap:5px;">View Prices <span>→</span></div></div>
+    <div class="card gc"><span class="ci">📱</span><h3>Digital Products</h3><p>From dashboards to booking systems — we design and ship digital products people love.</p></div>
+    <div class="card gc"><span class="ci">🔒</span><h3>Systems Integration</h3><p>Connecting your tools, platforms, and data sources into one seamless, intelligent ecosystem.</p></div>
+  </div>
+  <div class="scta rv"><a href="pricing.html" class="bp">View Pricing Packages →</a></div>
+
+</div></section>
+
+<!-- PRODUCTS -->
+<section id="products"><div class="inn">
+  <div class="rv"><div class="sl">What We've Built</div><h2 class="st">Our Products</h2><p class="ss">A growing suite of intelligent tools built to solve real problems for modern businesses.</p></div>
+  <div class="ptabs rv">
+    <button class="ptab act" onclick="fprod('all',this)">All Products</button>
+    <button class="ptab" onclick="fprod('dashboard',this)">Dashboards</button>
+    <button class="ptab" onclick="fprod('automation',this)">Automation</button>
+    <button class="ptab" onclick="fprod('management',this)">Management</button>
+    <button class="ptab" onclick="fprod('web',this)">Web Tools</button>
+  </div>
+  <div class="pg rv" id="pg">
+
+    <div class="pc" data-cat="dashboard">
+      <div class="pim" style="background:linear-gradient(135deg,#0d1117,#1a1a2e);cursor:pointer;" onclick="location.href='product.html?id=dashboard'">
+        <div class="pem">📊</div><div class="pgr"></div>
+      </div>
+      <div class="pin">
+        <h3>Smart Business Dashboard</h3>
+        <p>See your entire business at a glance. Real-time revenue, client pipeline, task progress and growth trends — all in one clean, powerful interface built for your business.</p>
+        <div class="pfs">
+          <div class="pf">Live revenue & expense tracking</div>
+          <div class="pf">Client & project pipeline overview</div>
+          <div class="pf">KPI cards with growth trends</div>
+          <div class="pf">Task management & deadlines</div>
+          <div class="pf">Exportable PDF & Excel reports</div>
+          <div class="pf">Mobile-friendly dashboard</div>
+        </div>
+        <div class="prod-view-prices rv">
+          <span class="pvp-text">Want to see pricing? &nbsp;</span>
+          <a href="all-pricing.html#dashboard" class="pvp-link">View the prices →</a>
+        </div>
+        <div class="pft"><span class="badge blv">Live</span><a href="product.html?id=dashboard" class="plk">View Product →</a></div>
+      </div>
+    </div>
+
+    <div class="pc" data-cat="automation">
+      <div class="pim" style="background:linear-gradient(135deg,#0d1a0d,#1a2e1a);cursor:pointer;" onclick="location.href='product.html?id=appointment'">
+        <div class="pem">📅</div><div class="pgr"></div>
+      </div>
+      <div class="pin">
+        <h3>AI Appointment System</h3>
+        <p>Let clients book themselves 24/7 while you sleep. Automated WhatsApp reminders eliminate no-shows and save hours of back-and-forth scheduling every single week.</p>
+        <div class="pfs">
+          <div class="pf">24/7 online client self-booking</div>
+          <div class="pf">Automated WhatsApp reminders</div>
+          <div class="pf">Staff & calendar management</div>
+          <div class="pf">Cancellation & rescheduling flow</div>
+          <div class="pf">Daily appointment summary</div>
+          <div class="pf">No-show tracker & history log</div>
+        </div>
+        <div class="prod-view-prices rv">
+          <span class="pvp-text">Want to see pricing? &nbsp;</span>
+          <a href="all-pricing.html#appointment" class="pvp-link">View the prices →</a>
+        </div>
+        <div class="pft"><span class="badge blv">Live</span><a href="product.html?id=appointment" class="plk">View Product →</a></div>
+      </div>
+    </div>
+
+    <div class="pc" data-cat="management">
+      <div class="pim" style="background:linear-gradient(135deg,#1a0d00,#2e1a00);cursor:pointer;" onclick="location.href='product.html?id=invoice'">
+        <div class="pem">🧾</div><div class="pgr"></div>
+      </div>
+      <div class="pin">
+        <h3>Invoice & Quote Generator</h3>
+        <p>Stop sending unprofessional invoices. Generate branded, itemised invoices and quotes in seconds — send via WhatsApp or email and track every rand owed to you.</p>
+        <div class="pfs">
+          <div class="pf">Branded PDF invoices & quotes</div>
+          <div class="pf">Itemised line items & VAT toggle</div>
+          <div class="pf">Payment status — Paid / Pending / Overdue</div>
+          <div class="pf">Full client payment history</div>
+          <div class="pf">Send via WhatsApp or email instantly</div>
+          <div class="pf">Monthly revenue summary report</div>
+        </div>
+        <div class="prod-view-prices rv">
+          <span class="pvp-text">Want to see pricing? &nbsp;</span>
+          <a href="all-pricing.html#invoice" class="pvp-link">View the prices →</a>
+        </div>
+        <div class="pft"><span class="badge blv">Live</span><a href="product.html?id=invoice" class="plk">View Product →</a></div>
+      </div>
+    </div>
+
+    <div class="pc" data-cat="management">
+      <div class="pim" style="background:linear-gradient(135deg,#0d0a1a,#1a152e);cursor:pointer;" onclick="location.href='product.html?id=crm'">
+        <div class="pem">👥</div><div class="pgr"></div>
+      </div>
+      <div class="pin">
+        <h3>Client CRM Portal</h3>
+        <p>Your entire client base in one organised system. Track every conversation, deal stage, and follow-up so you always know exactly where each relationship stands.</p>
+        <div class="pfs">
+          <div class="pf">Full client contact database</div>
+          <div class="pf">Deal pipeline with drag & drop stages</div>
+          <div class="pf">Automated follow-up reminders</div>
+          <div class="pf">Notes, tags & interaction history</div>
+          <div class="pf">Lead source & conversion tracking</div>
+          <div class="pf">WhatsApp quick-contact integration</div>
+        </div>
+        <div class="prod-view-prices rv">
+          <span class="pvp-text">Want to see pricing? &nbsp;</span>
+          <a href="all-pricing.html#crm" class="pvp-link">View the prices →</a>
+        </div>
+        <div class="pft"><span class="badge blv">Live</span><a href="product.html?id=crm" class="plk">View Product →</a></div>
+      </div>
+    </div>
+
+    <div class="pc" data-cat="management">
+      <div class="pim" style="background:linear-gradient(135deg,#001a1a,#002e2e);cursor:pointer;" onclick="location.href='product.html?id=staff'">
+        <div class="pem">🏢</div><div class="pgr"></div>
+      </div>
+      <div class="pin">
+        <h3>Staff Management System</h3>
+        <p>Run your team without the admin headache. Schedule shifts, track attendance, manage leave requests, and generate payroll summaries — all from one simple dashboard.</p>
+        <div class="pfs">
+          <div class="pf">Shift scheduling & digital clock-in</div>
+          <div class="pf">Leave requests & manager approvals</div>
+          <div class="pf">Attendance & punctuality reports</div>
+          <div class="pf">Performance notes & ratings</div>
+          <div class="pf">Staff contact directory</div>
+          <div class="pf">Monthly payroll summary export</div>
+        </div>
+        <div class="prod-view-prices rv">
+          <span class="pvp-text">Want to see pricing? &nbsp;</span>
+          <a href="all-pricing.html#staff" class="pvp-link">View the prices →</a>
+        </div>
+        <div class="pft"><span class="badge blv">Live</span><a href="product.html?id=staff" class="plk">View Product →</a></div>
+      </div>
+    </div>
+
+    <div class="pc" data-cat="web">
+      <div class="pim" style="background:linear-gradient(135deg,#0a0a0a,#1a1000);cursor:pointer;" onclick="location.href='product.html?id=website'">
+        <div class="pem">🌐</div><div class="pgr"></div>
+      </div>
+      <div class="pin">
+        <h3>Website Development</h3>
+        <p>Professional, mobile-ready websites built for South African businesses. From a clean starter site to a fully custom AI-powered digital experience. Fast delivery, fair pricing.</p>
+        <div class="pfs">
+          <div class="pf">Mobile-first, fully responsive design</div>
+          <div class="pf">WhatsApp chat & contact integration</div>
+          <div class="pf">Fast delivery — 3 to 14 days</div>
+          <div class="pf">SEO-ready structure from day one</div>
+          <div class="pf">50% deposit, balance on delivery</div>
+          <div class="pf">Add-ons: store, booking, AI chat</div>
+        </div>
+        <div class="prod-view-prices rv">
+          <span class="pvp-text">Want to see pricing? &nbsp;</span>
+          <a href="all-pricing.html#website" class="pvp-link">View the prices →</a>
+        </div>
+        <div class="pft"><span class="badge blv">Live</span><a href="product.html?id=website" class="plk">View Product →</a></div>
+      </div>
+    </div>
+
+  </div>
+</div></section>
+
+<!-- ABOUT -->
+<section id="about" style="background:var(--bg2);">
+  <div class="ai">
+    <div class="at rv">
+      <div class="sl">Who We Are</div>
+      <h2 class="st">Built by Two Founders<br>Who Think Different</h2>
+      <p class="ss">Synapse Systems was founded in 2026 by Prince J. and Njabulo M. with one mission — to make intelligent technology accessible to every business. We combine AI, automation, and thoughtful design to build systems that actually work.</p>
+      <div class="avs">
+        <div class="vi"><div class="vd"></div>AI-first approach to every solution</div>
+        <div class="vi"><div class="vd"></div>Built for real business impact, not just aesthetics</div>
+        <div class="vi"><div class="vd"></div>Transparent process from concept to delivery</div>
+        <div class="vi"><div class="vd"></div>Long-term partnership, not one-time projects</div>
+      </div>
+    </div>
+    <div class="avis rv gc">
+      <div class="abig">SS</div>
+      <div class="acap">Synapse Systems</div>
+      <p class="aqt">"Our goal is not just to build products — it is to build the future of intelligent business, one system at a time."</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="inn">
+    <div class="rv">
+      <div class="sl">Client Feedback</div>
+      <h2 class="st">What Clients Say</h2>
+      <p class="ss">Real feedback from South African businesses we've built for.</p>
+    </div>
+    <div class="testi-grid rv">
+      <div class="testi-card gc">
+        <p class="testi-quote">Synapse Systems built our booking system in under a week. Now clients book themselves on WhatsApp and we get zero no-shows. It changed how we run the business completely.</p>
+        <div class="testi-footer">
+          <div class="testi-avatar">TM</div>
+          <div>
+            <div class="testi-name">Thabo M.</div>
+            <div class="testi-biz">Hair Salon Owner &nbsp;•&nbsp; Soweto</div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card gc">
+        <p class="testi-quote">The invoice system is exactly what I needed. I used to send WhatsApp screenshots as invoices — now I send professional PDFs and clients pay faster. Worth every rand.</p>
+        <div class="testi-footer">
+          <div class="testi-avatar">NC</div>
+          <div>
+            <div class="testi-name">Nomsa C.</div>
+            <div class="testi-biz">Freelance Contractor &nbsp;•&nbsp; Pretoria</div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card gc">
+        <p class="testi-quote">Our website went live in 5 days. Professional, mobile-ready, and our clients can book directly. The WhatsApp integration alone saved us hours every week. Highly recommend.</p>
+        <div class="testi-footer">
+          <div class="testi-avatar">SN</div>
+          <div>
+            <div class="testi-name">Sipho N.</div>
+            <div class="testi-biz">Construction Company &nbsp;•&nbsp; Mpumalanga</div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section id="roadmap"><div class="inn">
+  <div class="rv"><div class="sl">Where We're Going</div><h2 class="st">Startup Roadmap</h2><p class="ss">Our vision is clear. Here's the journey ahead for Synapse Systems.</p></div>
+  <div class="rmg rv">
+    <div class="road card gc"><div class="rn">Q1 2026</div><h3>Foundation</h3><p>Launch AI Dashboard Prototype and establish core product infrastructure.</p></div>
+    <div class="road card gc"><div class="rn">Q2 2026</div><h3>Automation</h3><p>Release full Automation Systems suite and Client CRM Portal for enterprise clients.</p></div>
+    <div class="road card gc"><div class="rn">Q3 2026</div><h3>Expansion</h3><p>Expand to international clients and launch global outreach campaign.</p></div>
+    <div class="road card gc"><div class="rn">Q4 2026</div><h3>Scale</h3><p>AI Housing System MVP launch and begin Series A funding preparation.</p></div>
+  </div>
+</div></section>
+
+<!-- BLOG -->
+<section id="blog" class="blog"><div class="inn">
+  <div class="rv"><div class="sl">Insights & Ideas</div><h2 class="st">From the Lab</h2><p class="ss">Thoughts on AI, automation, and building intelligent businesses in 2026.</p></div>
+  <div class="blg rv">
+    <article class="bc gc">
+      <div class="bim"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800" loading="lazy" alt="AI Agents"><span class="bcat">AI</span></div>
+      <div class="bb"><div class="bmt"><span>March 10, 2026</span><span>·</span><span>5 min read</span></div><h3>The Future of AI Agents in Business</h3><p>How autonomous AI agents are transforming how enterprises handle decisions, workflows, and customer interactions.</p><a href="#" class="brm">Read Article →</a></div>
+    </article>
+    <article class="bc gc">
+      <div class="bim"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800" loading="lazy" alt="Automation ROI"><span class="bcat">Automation</span></div>
+      <div class="bb"><div class="bmt"><span>Feb 24, 2026</span><span>·</span><span>4 min read</span></div><h3>Why Automation ROI Hits Different in 2026</h3><p>The numbers behind modern automation and why small businesses see outsized returns faster than ever.</p><a href="#" class="brm">Read Article →</a></div>
+    </article>
+    <article class="bc gc">
+      <div class="bim"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" loading="lazy" alt="Digital Products"><span class="bcat">Strategy</span></div>
+      <div class="bb"><div class="bmt"><span>Feb 5, 2026</span><span>·</span><span>6 min read</span></div><h3>From Idea to Intelligent Product in 30 Days</h3><p>Behind the scenes — how Synapse Systems goes from client brief to fully deployed intelligent product.</p><a href="#" class="brm">Read Article →</a></div>
+    </article>
+  </div>
+</div></section>
+
+
+<!-- CTA STRIP -->
+<div class="cta-strip rv">
+  <div class="cta-strip-inner">
+    <h2>Ready to <span>Grow</span> Your Business?</h2>
+    <p>Join South African businesses already using Synapse Systems products. Get a free consultation — we'll tell you exactly which product fits your business and how fast we can deliver it.</p>
+    <div class="cta-strip-btns">
+      <a href="https://wa.me/27677723822?text=Hi%20Synapse%20Systems!%20I%27d%20like%20a%20free%20consultation%20about%20your%20products." target="_blank" class="bp">💬 Free WhatsApp Consult</a>
+      <a href="pricing.html" class="bo">View All Pricing →</a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" style="background:var(--bg2);">
+  <div class="ci2">
+    <div class="cinfo rv">
+      <div class="sl">Get In Touch</div>
+      <h2 class="st">Let's Build Something Intelligent</h2>
+      <p class="ss">Have a project in mind? Reach out and we'll get back to you within 24 hours.</p>
+      <div class="cd"><div class="cdi">📧</div><a href="/cdn-cgi/l/email-protection#37444e5956474452444e4443525a0706040677505a565e5b1954585a"><span class="__cf_email__" data-cfemail="77040e1916070412040e0403121a4746444637101a161e1b5914181a">[email&#160;protected]</span></a></div>
+      <div class="cd"><div class="cdi">💬</div><a href="https://wa.me/27677723822" target="_blank">+27 67 772 3822 (WhatsApp)</a></div>
+      <div class="cd"><div class="cdi">📞</div><a href="tel:+27761252365">+27 76 125 2365</a></div>
+      <div class="cd"><div class="cdi">🌍</div><span>South Africa &nbsp;•&nbsp; Serving globally</span></div>
+      <div class="cplink"><p>Looking for website pricing?</p><a href="pricing.html" class="bo" style="display:inline-flex;margin-top:8px;">View Our Packages →</a></div>
+    </div>
+    <div class="cfw rv gc">
+      <form id="cform" onsubmit="sendMsg(event)" novalidate>
+        <div class="fr">
+          <div class="fg"><input type="text" id="nm" placeholder="Your Name *" required><span class="em" id="nm-e">Please enter your name</span></div>
+          <div class="fg"><input type="email" id="em" placeholder="Your Email *" required><span class="em" id="em-e">Please enter a valid email</span></div>
+        </div>
+        <div class="fr">
+          <div class="fg"><input type="text" id="co" placeholder="Company (optional)"></div>
+          <div class="fg"><input type="tel" id="ph" placeholder="Phone / WhatsApp (optional)"></div>
+        </div>
+        <div class="fg">
+          <select id="sv">
+            <option value="" disabled selected>Service you're interested in</option>
+            <option>AI Software Solutions</option><option>Automation & Robotics</option>
+            <option>Business Consulting</option><option>Website Development</option>
+            <option>Digital Products</option><option>Other / Custom Project</option>
+          </select>
+        </div>
+        <div class="fg"><textarea id="mg" placeholder="Tell us about your project *" required></textarea><span class="em" id="mg-e">Please enter your message</span></div>
+        <input type="text" id="hp" style="display:none" tabindex="-1" autocomplete="off">
+        <button type="submit" class="bp" id="sbtn" style="width:100%;"><span id="btxt">Send Message</span><span id="bldr" style="display:none">Sending...</span></button>
+      </form>
+      <div class="scard" id="scard">
+        <div class="ck">✅</div>
+        <h3>Message Sent!</h3>
+        <p>Thank you for reaching out. Synapse Systems will contact you within 24 hours.</p>
+        <button class="bo" onclick="resetF()">Send Another Message</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer><div class="fi">
+  <div class="fl">Synapse <span>Systems</span></div>
+  <div class="flinks">
+    <a href="#home">Home</a><a href="#services">Services</a><a href="#products">Products</a>
+    <a href="#about">About</a><a href="#blog">Blog</a><a href="#contact">Contact</a>
+    <a href="#why">Why Us</a><a href="#testimonials">Reviews</a><a href="pricing.html" class="hl">Pricing</a><a href="business-card.html">Business Card</a>
+  </div>
+  <div class="fr2">
+    <div class="fsoc">
+      <a class="fsi" href="https://wa.me/27677723822" target="_blank">💬</a>
+      <a class="fsi" href="/cdn-cgi/l/email-protection#22515b4c43525147515b5156474f1213111362454f434b4e0c414d4f">📧</a>
+      <a class="fsi" href="tel:+27761252365">📞</a>
+    </div>
+    <div class="fc">© 2026 Synapse Systems — Connecting Intelligence.</div>
+  </div>
+</div></footer>
+
+<!-- IMG MODAL -->
+<div class="im" id="im" onclick="closeImg()"><img id="mimg" alt="Preview"></div>
+
+<!-- PRICING MODAL -->
+<div class="pm-overlay" id="pricingModal" onclick="closePricingModal(event)">
+  <div class="pm-box">
+    <div class="pm-header">
+      <div class="pm-header-text">
+        <h3>🌐 Website Packages</h3>
+        <p>No hidden fees. Mobile-ready. Delivered fast. Click any plan to enquire.</p>
+      </div>
+      <button class="pm-close" onclick="closePricingModal(true)">✕</button>
+    </div>
+    <div class="pm-body">
+      <div class="pm-plans">
+
+        <!-- BASIC -->
+        <div class="pmplan">
+          <span class="pm-ico">🌐</span>
+          <div class="pm-pname">Basic</div>
+          <div class="pm-pprice"><sup>R</sup>800</div>
+          <div class="pm-cycle">One-time payment</div>
+          <div class="pm-desc">Perfect for first-time websites and local businesses getting online fast.</div>
+          <ul class="pm-feats">
+            <li><div class="pm-ck">✓</div>1–3 Pages</li>
+            <li><div class="pm-ck">✓</div>Mobile Friendly Design</li>
+            <li><div class="pm-ck">✓</div>Clean, Modern Layout</li>
+            <li><div class="pm-ck">✓</div>Contact Section</li>
+            <li><div class="pm-ck">✓</div>Delivered in 3–5 Days</li>
+            <li class="pmdim"><div class="pm-ck">–</div>WhatsApp Integration</li>
+          </ul>
+          <button class="pm-pbtn pmbo" onclick="bookPlan('Basic – R800')">Get Started →</button>
+        </div>
+
+        <!-- STANDARD -->
+        <div class="pmplan pmfeat">
+          <div class="pm-pop">Most Popular</div>
+          <span class="pm-ico">💼</span>
+          <div class="pm-pname">Standard</div>
+          <div class="pm-pprice"><sup>R</sup>1,500</div>
+          <div class="pm-cycle">One-time payment</div>
+          <div class="pm-desc">The sweet spot for growing businesses that need a professional presence.</div>
+          <ul class="pm-feats">
+            <li><div class="pm-ck">✓</div>3–5 Pages</li>
+            <li><div class="pm-ck">✓</div>Mobile Friendly Design</li>
+            <li><div class="pm-ck">✓</div>WhatsApp Chat Integration</li>
+            <li><div class="pm-ck">✓</div>Contact Form</li>
+            <li><div class="pm-ck">✓</div>Scroll Animations</li>
+            <li><div class="pm-ck">✓</div>Delivered in 5–7 Days</li>
+          </ul>
+          <button class="pm-pbtn pmbs" onclick="bookPlan('Standard – R1,500')">Get Started →</button>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="pmplan">
+          <span class="pm-ico">🚀</span>
+          <div class="pm-pname">Premium</div>
+          <div class="pm-pprice"><sup>R</sup>3,000<sub>+</sub></div>
+          <div class="pm-cycle">Custom quote</div>
+          <div class="pm-desc">Fully bespoke, high-end experience for businesses that want to stand out.</div>
+          <ul class="pm-feats">
+            <li><div class="pm-ck">✓</div>Unlimited Pages</li>
+            <li><div class="pm-ck">✓</div>Custom Design & Branding</li>
+            <li><div class="pm-ck">✓</div>Advanced Features</li>
+            <li><div class="pm-ck">✓</div>High-End UI/UX</li>
+            <li><div class="pm-ck">✓</div>AI-Powered Elements</li>
+            <li><div class="pm-ck">✓</div>Priority Delivery</li>
+          </ul>
+          <button class="pm-pbtn pmbo" onclick="bookPlan('Premium – R3,000+')">Get Custom Quote →</button>
+        </div>
+
+      </div>
+
+      <!-- ADD-ONS STRIP -->
+      <div class="pm-strip">
+        <div class="pm-strip-l">
+          <div class="pm-strip-ico">⚡</div>
+          <div class="pm-strip-txt">
+            <h4>Add-Ons Available</h4>
+            <p>Supercharge any package with extras.</p>
+          </div>
+        </div>
+        <div class="pm-strip-r">
+          <span class="pm-tag">AI Chat</span>
+          <span class="pm-tag">Booking System</span>
+          <span class="pm-tag">Online Store</span>
+             <span class="pm-tag">SEO Setup</span>
+          <span class="pm-tag">Maintenance</span>
+        </div>
+      </div>
+
+      <div class="pm-full-link">
+        <a href="pricing.html" target="_blank">See Full Pricing Page with Booking Form →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

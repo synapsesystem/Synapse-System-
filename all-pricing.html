@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Product Pricing — Synapse Systems</title>
+<meta name="description" content="Transparent pricing for all Synapse Systems products. Basic, Standard and Premium packages for every business need.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;0,800;1,700;1,800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="all-pricing.css">
+</head>
+<body>
+
+<!-- WA BUBBLE -->
+<a class="wab" href="https://wa.me/27677723822?text=Hi%20Synapse%20Systems!%20I%27d%20like%20to%20enquire%20about%20your%20product%20pricing." target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.116 1.522 5.85L.057 23.27a.75.75 0 00.916.927l5.565-1.457A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.693 9.693 0 01-4.964-1.365l-.355-.212-3.683.965.983-3.586-.232-.369A9.693 9.693 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+</a>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- HEADER -->
+<header id="hdr">
+  <a href="index.html" class="logo">Synapse <span>Systems</span></a>
+  <div class="hright">
+    <button class="tbtn" onclick="toggleTheme()">🌙</button>
+    <a href="index.html#products" class="back-btn">← All Products</a>
+  </div>
+</header>
+
+<!-- STICKY PRODUCT NAV -->
+<nav class="prod-nav" id="prod-nav">
+  <div class="prod-nav-inner">
+    <div class="pnav-item active" onclick="scrollToProduct('dashboard',this)"><span class="pnav-ico">📊</span>Dashboard</div>
+    <div class="pnav-item" onclick="scrollToProduct('appointment',this)"><span class="pnav-ico">📅</span>Appointments</div>
+    <div class="pnav-item" onclick="scrollToProduct('invoice',this)"><span class="pnav-ico">🧾</span>Invoicing</div>
+    <div class="pnav-item" onclick="scrollToProduct('crm',this)"><span class="pnav-ico">👥</span>CRM</div>
+    <div class="pnav-item" onclick="scrollToProduct('staff',this)"><span class="pnav-ico">🏢</span>Staff</div>
+    <div class="pnav-item" onclick="scrollToProduct('website',this)"><span class="pnav-ico">🌐</span>Website</div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <canvas id="hero-bg"></canvas>
+  <div class="hero-inner">
+    <div class="hero-badge"><div class="hbdot"></div>All Products &nbsp;•&nbsp; Transparent Pricing</div>
+    <h1>Simple Pricing.<br><em>Zero Surprises.</em></h1>
+    <p>Every Synapse Systems product. Every package. Every price — laid out clearly so you know exactly what you're getting before you spend a cent.</p>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust">
+  <div class="trust-inner">
+    <div class="titem"><span class="ti">💳</span>One-Time Payment</div>
+    <div class="titem"><span class="ti">🚫</span>No Subscriptions</div>
+    <div class="titem"><span class="ti">🔒</span>50% Deposit Only</div>
+    <div class="titem"><span class="ti">💬</span>Book via WhatsApp</div>
+    <div class="titem"><span class="ti">🇿🇦</span>South Africa Based</div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     1. SMART BUSINESS DASHBOARD
+     ════════════════════════════════════ -->
+<section class="prod-block" id="dashboard">
+  <div class="prod-block-inner">
+    <div class="pb-header rv">
+      <div class="pb-left">
+        <div class="pb-emoji" style="background:linear-gradient(135deg,#0d1117,#1a1a2e);">📊</div>
+        <div class="pb-info">
+          <div class="pb-label">Dashboard</div>
+          <div class="pb-title">Smart Business Dashboard</div>
+          <div class="pb-desc">Real-time revenue, clients, KPIs, tasks and growth charts — all in one custom-built interface for your business.</div>
+        </div>
+      </div>
+      <div class="pb-right">
+        <div class="pb-from">Starting from</div>
+        <div class="pb-price"><sup>R</sup>800</div>
+        <a href="product.html?id=dashboard" class="pb-view-btn">View Full Product →</a>
+      </div>
+    </div>
+    <div class="plans-grid rv">
+      <div class="plan">
+        <span class="plan-ico">📊</span>
+        <div class="plan-tier">Basic</div>
+        <div class="plan-price"><sup>R</sup>800</div>
+        <div class="plan-note">One-time setup</div>
+        <div class="plan-desc">A clean single-page overview for small businesses that want to see their numbers simply and clearly.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Single dashboard page</li>
+          <li><div class="pck">✓</div>Revenue & expense overview</li>
+          <li><div class="pck">✓</div>5 KPI summary cards</li>
+          <li><div class="pck">✓</div>Basic monthly chart</li>
+          <li><div class="pck">✓</div>Mobile responsive</li>
+          <li><div class="pck">✓</div>WhatsApp support</li>
+          <li class="dim"><div class="pck">–</div>Multiple modules</li>
+          <li class="dim"><div class="pck">–</div>PDF/Excel export</li>
+          <li class="dim"><div class="pck">–</div>Client pipeline</li>
+        </ul>
+        <button class="plan-btn outline" onclick="book('Smart Business Dashboard','Basic – R800')">Book via WhatsApp →</button>
+      </div>
+      <div class="plan feat">
+        <div class="plan-pop">Most Popular</div>
+        <span class="plan-ico">📊</span>
+        <div class="plan-tier">Standard</div>
+        <div class="plan-price"><sup>R</sup>1,500</div>
+        <div class="plan-note">One-time setup</div>
+        <div class="plan-desc">Multi-module dashboard with full tracking, charts, client pipeline, task tracker and exportable reports.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Multi-module dashboard</li>
+          <li><div class="pck">✓</div>Revenue, expenses & profit</li>
+          <li><div class="pck">✓</div>Client & project pipeline</li>
+          <li><div class="pck">✓</div>Task tracker with deadlines</li>
+          <li><div class="pck">✓</div>Monthly trend charts</li>
+          <li><div class="pck">✓</div>PDF & Excel report export</li>
+          <li><div class="pck">✓</div>Mobile responsive</li>
+          <li><div class="pck">✓</div>WhatsApp support</li>
+        </ul>
+        <button class="plan-btn solid" onclick="book('Smart Business Dashboard','Standard – R1,500')">Book via WhatsApp →</button>
+      </div>
+      <div class="plan">
+        <span class="plan-ico">📊</span>
+        <div class="plan-tier">Premium</div>
+        <div class="plan-price"><sup>R</sup>2,500<sub>+</sub></div>
+        <div class="plan-note">Custom quote</div>
+        <div class="plan-desc">Fully bespoke dashboard with AI-powered insights, custom modules, and deep integrations.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Everything in Standard</li>
+          <li><div class="pck">✓</div>AI-powered insights & alerts</li>
+          <li><div class="pck">✓</div>Custom modules per workflow</li>
+          <li><div class="pck">✓</div>Multi-user access</li>
+          <li><div class="pck">✓</div>Automated monthly email reports</li>
+          <li><div class="pck">✓</div>Full data integration</li>
+          <li><div class="pck">✓</div>Priority delivery & support</li>
+        </ul>
+        <button class="plan-btn outline" onclick="book('Smart Business Dashboard','Premium – R2,500+')">Get Custom Quote →</button>
+      </div>
+    </div>
+    <div class="includes-strip rv">
+      <div class="inc-left"><div class="inc-ico">✅</div><div class="inc-txt"><h4>Every Plan Includes</h4><p>Custom branding &nbsp;•&nbsp; Mobile-ready &nbsp;•&nbsp; Setup & training &nbsp;•&nbsp; WhatsApp support</p></div></div>
+      <div class="inc-tags"><span class="inc-tag">50% Deposit</span><span class="inc-tag">You Own It</span><span class="inc-tag">3–7 Day Delivery</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     2. AI APPOINTMENT SYSTEM
+     ════════════════════════════════════ -->
+<section class="prod-block" id="appointment">
+  <div class="prod-block-inner">
+    <div class="pb-header rv">
+      <div class="pb-left">
+        <div class="pb-emoji" style="background:linear-gradient(135deg,#0d1a0d,#1a2e1a);">📅</div>
+        <div class="pb-info">
+          <div class="pb-label">Automation</div>
+          <div class="pb-title">AI Appointment System</div>
+          <div class="pb-desc">Let clients book themselves 24/7. Automated WhatsApp reminders eliminate no-shows and save hours of scheduling every week.</div>
+        </div>
+      </div>
+      <div class="pb-right">
+        <div class="pb-from">Starting from</div>
+        <div class="pb-price"><sup>R</sup>900</div>
+        <a href="product.html?id=appointment" class="pb-view-btn">View Full Product →</a>
+      </div>
+    </div>
+    <div class="plans-grid rv">
+      <div class="plan">
+        <span class="plan-ico">📅</span>
+        <div class="plan-tier">Basic</div>
+        <div class="plan-price"><sup>R</sup>900</div>
+        <div class="plan-note">One-time setup</div>
+        <div class="plan-desc">Simple online booking form for solo service providers with instant WhatsApp notifications.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Online booking form</li>
+          <li><div class="pck">✓</div>WhatsApp alert on new booking</li>
+          <li><div class="pck">✓</div>Single staff / service</li>
+          <li><div class="pck">✓</div>Basic calendar view</li>
+          <li><div class="pck">✓</div>Mobile responsive</li>
+          <li class="dim"><div class="pck">–</div>Multi-staff</li>
+          <li class="dim"><div class="pck">–</div>Auto reminders</li>
+          <li class="dim"><div class="pck">–</div>No-show tracker</li>
+        </ul>
+        <button class="plan-btn outline" onclick="book('AI Appointment System','Basic – R900')">Book via WhatsApp →</button>
+      </div>
+      <div class="plan feat">
+        <div class="plan-pop">Most Popular</div>
+        <span class="plan-ico">📅</span>
+        <div class="plan-tier">Standard</div>
+        <div class="plan-price"><sup>R</sup>1,500</div>
+        <div class="plan-note">One-time setup</div>
+        <div class="plan-desc">Full booking system with automated reminders, multi-staff support, rescheduling and daily summaries.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Online booking portal</li>
+          <li><div class="pck">✓</div>Multi-staff & services</li>
+          <li><div class="pck">✓</div>Automated WhatsApp reminders</li>
+          <li><div class="pck">✓</div>Reschedule & cancellation flow</li>
+          <li><div class="pck">✓</div>Daily WhatsApp summary</li>
+          <li><div class="pck">✓</div>No-show tracker</li>
+          <li><div class="pck">✓</div>Admin dashboard</li>
+          <li><div class="pck">✓</div>Mobile responsive</li>
+        </ul>
+        <button class="plan-btn solid" onclick="book('AI Appointment System','Standard – R1,500')">Book via WhatsApp →</button>
+      </div>
+      <div class="plan">
+        <span class="plan-ico">📅</span>
+        <div class="plan-tier">Premium</div>
+        <div class="plan-price"><sup>R</sup>2,800<sub>+</sub></div>
+        <div class="plan-note">Custom quote</div>
+        <div class="plan-desc">Enterprise-grade booking for multi-location businesses with AI scheduling and full analytics.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Everything in Standard</li>
+          <li><div class="pck">✓</div>Multi-location support</li>
+          <li><div class="pck">✓</div>AI-powered scheduling</li>
+          <li><div class="pck">✓</div>Advanced analytics & reports</li>
+          <li><div class="pck">✓</div>Custom branding & URL</li>
+          <li><div class="pck">✓</div>Payment integration</li>
+          <li><div class="pck">✓</div>Priority support</li>
+        </ul>
+        <button class="plan-btn outline" onclick="book('AI Appointment System','Premium – R2,800+')">Get Custom Quote →</button>
+      </div>
+    </div>
+    <div class="includes-strip rv">
+      <div class="inc-left"><div class="inc-ico">✅</div><div class="inc-txt"><h4>Every Plan Includes</h4><p>Custom branding &nbsp;•&nbsp; WhatsApp integration &nbsp;•&nbsp; Setup & training &nbsp;•&nbsp; WhatsApp support</p></div></div>
+      <div class="inc-tags"><span class="inc-tag">50% Deposit</span><span class="inc-tag">You Own It</span><span class="inc-tag">3–7 Day Delivery</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     3. INVOICE & QUOTE GENERATOR
+     ════════════════════════════════════ -->
+<section class="prod-block" id="invoice">
+  <div class="prod-block-inner">
+    <div class="pb-header rv">
+      <div class="pb-left">
+        <div class="pb-emoji" style="background:linear-gradient(135deg,#1a0d00,#2e1a00);">🧾</div>
+        <div class="pb-info">
+          <div class="pb-label">Management</div>
+          <div class="pb-title">Invoice & Quote Generator</div>
+          <div class="pb-desc">Generate branded PDF invoices and quotes in seconds, send via WhatsApp or email, and track every rand owed.</div>
+        </div>
+      </div>
+      <div class="pb-right">
+        <div class="pb-from">Starting from</div>
+        <div class="pb-price"><sup>R</sup>700</div>
+        <a href="product.html?id=invoice" class="pb-view-btn">View Full Product →</a>
+      </div>
+    </div>
+    <div class="plans-grid rv">
+      <div class="plan">
+        <span class="plan-ico">🧾</span>
+        <div class="plan-tier">Basic</div>
+        <div class="plan-price"><sup>R</sup>700</div>
+        <div class="plan-note">One-time setup</div>
+        <div class="plan-desc">Simple branded PDF invoices and quotes for small businesses with up to 10 active clients.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Branded PDF invoices</li>
+          <li><div class="pck">✓</div>Branded PDF quotes</li>
+          <li><div class="pck">✓</div>Up to 10 clients</li>
+          <li><div class="pck">✓</div>WhatsApp & email send</li>
+          <li><div class="pck">✓</div>Basic payment status</li>
+          <li class="dim"><div class="pck">–</div>VAT toggle</li>
+          <li class="dim"><div class="pck">–</div>Monthly reports</li>
+          <li class="dim"><div class="pck">–</div>Unlimited clients</li>
+        </ul>
+        <button class="plan-btn outline" onclick="book('Invoice & Quote Generator','Basic – R700')">Book via WhatsApp →</button>
+      </div>
+      <div class="plan feat">
+        <div class="plan-pop">Most Popular</div>
+        <span class="plan-ico">🧾</span>
+        <div class="plan-tier">Standard</div>
+        <div class="plan-price"><sup>R</sup>1,200</div>
+        <div class="plan-note">One-time setup</div>
+        <div class="plan-desc">Full invoicing system with unlimited clients, VAT toggle, payment tracking and monthly revenue reports.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Branded PDF invoices & quotes</li>
+          <li><div class="pck">✓</div>Unlimited clients</li>
+          <li><div class="pck">✓</div>Itemised line items</li>
+          <li><div class="pck">✓</div>VAT toggle on/off</li>
+          <li><div class="pck">✓</div>Paid / Pending / Overdue status</li>
+          <li><div class="pck">✓</div>Full client payment history</li>
+          <li><div class="pck">✓</div>Monthly revenue summary</li>
+          <li><div class="pck">✓</div>WhatsApp & email send</li>
+        </ul>
+        <button class="plan-btn solid" onclick="book('Invoice & Quote Generator','Standard – R1,200')">Book via WhatsApp →</button>
+      </div>
+      <div class="plan">
+        <span class="plan-ico">🧾</span>
+        <div class="plan-tier">Premium</div>
+        <div class="plan-price"><sup>R</sup>2,200<sub>+</sub></div>
+        <div class="plan-note">Custom quote</div>
+        <div class="plan-desc">Advanced invoicing with auto reminders, overdue alerts, multi-currency and full analytics.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Everything in Standard</li>
+          <li><div class="pck">✓</div>Automated payment reminders</li>
+          <li><div class="pck">✓</div>Overdue WhatsApp alerts</li>
+          <li><div class="pck">✓</div>Multi-currency support</li>
+          <li><div class="pck">✓</div>Advanced analytics dashboard</li>
+          <li><div class="pck">✓</div>Recurring invoice setup</li>
+          <li><div class="pck">✓</div>Priority support</li>
+        </ul>
+        <button class="plan-btn outline" onclick="book('Invoice & Quote Generator','Premium – R2,200+')">Get Custom Quote →</button>
+      </div>
+    </div>
+    <div class="includes-strip rv">
+      <div class="inc-left"><div class="inc-ico">✅</div><div class="inc-txt"><h4>Every Plan Includes</h4><p>Full business branding &nbsp;•&nbsp; Client import &nbsp;•&nbsp; Mobile-ready &nbsp;•&nbsp; WhatsApp support</p></div></div>
+      <div class="inc-tags"><span class="inc-tag">50% Deposit</span><span class="inc-tag">You Own It</span><span class="inc-tag">3–7 Day Delivery</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     4. CLIENT CRM PORTAL
+     ════════════════════════════════════ -->
+<section class="prod-block" id="crm">
+  <div class="prod-block-inner">
+    <div class="pb-header rv">
+      <div class="pb-left">
+        <div class="pb-emoji" style="background:linear-gradient(135deg,#0d0a1a,#1a152e);">👥</div>
+        <div class="pb-info">
+          <div class="pb-label">Management</div>
+          <div class="pb-title">Client CRM Portal</div>
+          <div class="pb-desc">Every client, every deal, every follow-up — organised in one place. Never lose a lead or forget to follow up again.</div>
+        </div>
+      </div>
+      <div class="pb-right">
+        <div class="pb-from">Starting from</div>
+        <div class="pb-price"><sup>R</sup>800</div>
+        <a href="product.html?id=crm" class="pb-view-btn">View Full Product →</a>
+      </div>
+    </div>
+    <div class="plans-grid rv">
+      <div class="plan">
+        <span class="plan-ico">👥</span>
+        <div class="plan-tier">Basic</div>
+        <div class="plan-price"><sup>R</sup>800</div>
+        <div class="plan-note">One-time setup</div>
+        <div class="plan-desc">Clean client contact database for small businesses with up to 50 clients and basic notes.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Client contact database</li>
+          <li><div class="pck">✓</div>Up to 50 clients</li>
+          <li><div class="pck">✓</div>Notes per client</li>
+          <li><div class="pck">✓</div>WhatsApp quick-contact</li>
+          <li><div class="pck">✓</div>Mobile responsive</li>
+          <li class="dim"><div class="pck">–</div>Deal pipeline</li>
+          <li class="dim"><div class="pck">–</div>Follow-up reminders</li>
+          <li class="dim"><div class="pck">–</div>Interaction history</li>
+        </ul>
+        <button class="plan-btn outline" onclick="book('Client CRM Portal','Basic – R800')">Book via WhatsApp →</button>
+      </div>
+      <div class="plan feat">
+        <div class="plan-pop">Most Popular</div>
+        <span class="plan-ico">👥</span>
+        <div class="plan-tier">Standard</div>
+        <div class="plan-price"><sup>R</sup>1,400</div>
+        <div class="plan-note">One-time setup</div>
+        <div class="plan-desc">Full CRM with unlimited clients, visual deal pipeline, follow-up reminders and interaction history.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Unlimited clients</li>
+          <li><div class="pck">✓</div>Full contact database</li>
+          <li><div class="pck">✓</div>Visual deal pipeline</li>
+          <li><div class="pck">✓</div>Follow-up reminders</li>
+          <li><div class="pck">✓</div>Interaction history log</li>
+          <li><div class="pck">✓</div>Lead source tracking</li>
+          <li><div class="pck">✓</div>Notes & tags per client</li>
+          <li><div class="pck">✓</div>WhatsApp quick-contact</li>
+        </ul>
+        <button class="plan-btn solid" onclick="book('Client CRM Portal','Standard – R1,400')">Book via WhatsApp →</button>
+      </div>
+      <div class="plan">
+        <span class="plan-ico">👥</span>
+        <div class="plan-tier">Premium</div>
+        <div class="plan-price"><sup>R</sup>2,500<sub>+</sub></div>
+        <div class="plan-note">Custom quote</div>
+        <div class="plan-desc">AI-enhanced CRM with lead scoring, automated follow-ups, team access and advanced analytics.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Everything in Standard</li>
+          <li><div class="pck">✓</div>AI lead scoring</li>
+          <li><div class="pck">✓</div>Automated follow-up sequences</li>
+          <li><div class="pck">✓</div>Team access & roles</li>
+          <li><div class="pck">✓</div>Advanced conversion analytics</li>
+          <li><div class="pck">✓</div>Custom pipeline stages</li>
+          <li><div class="pck">✓</div>Priority support</li>
+        </ul>
+        <button class="plan-btn outline" onclick="book('Client CRM Portal','Premium – R2,500+')">Get Custom Quote →</button>
+      </div>
+    </div>
+    <div class="includes-strip rv">
+      <div class="inc-left"><div class="inc-ico">✅</div><div class="inc-txt"><h4>Every Plan Includes</h4><p>Data import &nbsp;•&nbsp; Custom pipeline stages &nbsp;•&nbsp; Setup & training &nbsp;•&nbsp; WhatsApp support</p></div></div>
+      <div class="inc-tags"><span class="inc-tag">50% Deposit</span><span class="inc-tag">You Own It</span><span class="inc-tag">3–7 Day Delivery</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     5. STAFF MANAGEMENT SYSTEM
+     ════════════════════════════════════ -->
+<section class="prod-block" id="staff">
+  <div class="prod-block-inner">
+    <div class="pb-header rv">
+      <div class="pb-left">
+        <div class="pb-emoji" style="background:linear-gradient(135deg,#001a1a,#002e2e);">🏢</div>
+        <div class="pb-info">
+          <div class="pb-label">Management</div>
+          <div class="pb-title">Staff Management System</div>
+          <div class="pb-desc">Shifts, attendance, leave requests, performance notes and payroll summaries — all digital, all in one place.</div>
+        </div>
+      </div>
+      <div class="pb-right">
+        <div class="pb-from">Starting from</div>
+        <div class="pb-price"><sup>R</sup>900</div>
+        <a href="product.html?id=staff" class="pb-view-btn">View Full Product →</a>
+      </div>
+    </div>
+    <div class="plans-grid rv">
+      <div class="plan">
+        <span class="plan-ico">🏢</span>
+        <div class="plan-tier">Basic</div>
+        <div class="plan-price"><sup>R</sup>900</div>
+        <div class="plan-note">One-time setup</div>
+        <div class="plan-desc">Simple shift scheduling and digital clock-in for small teams with up to 5 staff members.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Shift scheduling</li>
+          <li><div class="pck">✓</div>Digital clock-in</li>
+          <li><div class="pck">✓</div>Up to 5 staff</li>
+          <li><div class="pck">✓</div>Basic attendance log</li>
+          <li><div class="pck">✓</div>Mobile responsive</li>
+          <li class="dim"><div class="pck">–</div>Leave management</li>
+          <li class="dim"><div class="pck">–</div>Performance notes</li>
+          <li class="dim"><div class="pck">–</div>Payroll export</li>
+        </ul>
+        <button class="plan-btn outline" onclick="book('Staff Management System','Basic – R900')">Book via WhatsApp →</button>
+      </div>
+      <div class="plan feat">
+        <div class="plan-pop">Most Popular</div>
+        <span class="plan-ico">🏢</span>
+        <div class="plan-tier">Standard</div>
+        <div class="plan-price"><sup>R</sup>1,600</div>
+        <div class="plan-note">One-time setup</div>
+        <div class="plan-desc">Full HR system for up to 20 staff with leave management, performance notes and payroll export.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Up to 20 staff</li>
+          <li><div class="pck">✓</div>Shift scheduling & rosters</li>
+          <li><div class="pck">✓</div>Digital clock-in / clock-out</li>
+          <li><div class="pck">✓</div>Leave requests & approvals</li>
+          <li><div class="pck">✓</div>Attendance & punctuality reports</li>
+          <li><div class="pck">✓</div>Performance notes & ratings</li>
+          <li><div class="pck">✓</div>Staff contact directory</li>
+          <li><div class="pck">✓</div>Monthly payroll summary export</li>
+        </ul>
+        <button class="plan-btn solid" onclick="book('Staff Management System','Standard – R1,600')">Book via WhatsApp →</button>
+      </div>
+      <div class="plan">
+        <span class="plan-ico">🏢</span>
+        <div class="plan-tier">Premium</div>
+        <div class="plan-price"><sup>R</sup>2,800<sub>+</sub></div>
+        <div class="plan-note">Custom quote</div>
+        <div class="plan-desc">Enterprise HR management for unlimited staff and multiple branches with full analytics.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Everything in Standard</li>
+          <li><div class="pck">✓</div>Unlimited staff</li>
+          <li><div class="pck">✓</div>Multi-branch support</li>
+          <li><div class="pck">✓</div>Advanced HR tools</li>
+          <li><div class="pck">✓</div>Disciplinary record management</li>
+          <li><div class="pck">✓</div>Full analytics dashboard</li>
+          <li><div class="pck">✓</div>Priority support</li>
+        </ul>
+        <button class="plan-btn outline" onclick="book('Staff Management System','Premium – R2,800+')">Get Custom Quote →</button>
+      </div>
+    </div>
+    <div class="includes-strip rv">
+      <div class="inc-left"><div class="inc-ico">✅</div><div class="inc-txt"><h4>Every Plan Includes</h4><p>Staff onboarding &nbsp;•&nbsp; Mobile for staff &nbsp;•&nbsp; Setup & training &nbsp;•&nbsp; WhatsApp support</p></div></div>
+      <div class="inc-tags"><span class="inc-tag">50% Deposit</span><span class="inc-tag">You Own It</span><span class="inc-tag">3–7 Day Delivery</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     6. WEBSITE DEVELOPMENT
+     ════════════════════════════════════ -->
+<section class="prod-block" id="website">
+  <div class="prod-block-inner">
+    <div class="pb-header rv">
+      <div class="pb-left">
+        <div class="pb-emoji" style="background:linear-gradient(135deg,#0a0a0a,#1a1000);">🌐</div>
+        <div class="pb-info">
+          <div class="pb-label">Web Development</div>
+          <div class="pb-title">Website Development</div>
+          <div class="pb-desc">Professional, mobile-ready websites for South African businesses. Fast delivery, fair pricing, WhatsApp-integrated from day one.</div>
+        </div>
+      </div>
+      <div class="pb-right">
+        <div class="pb-from">Starting from</div>
+        <div class="pb-price"><sup>R</sup>800</div>
+        <a href="product.html?id=website" class="pb-view-btn">View Full Product →</a>
+      </div>
+    </div>
+    <div class="plans-grid rv">
+      <div class="plan">
+        <span class="plan-ico">🌐</span>
+        <div class="plan-tier">Basic</div>
+        <div class="plan-price"><sup>R</sup>800</div>
+        <div class="plan-note">One-time payment</div>
+        <div class="plan-desc">A clean, professional 1–3 page website to get your business online fast and looking great.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>1–3 pages</li>
+          <li><div class="pck">✓</div>Mobile-friendly design</li>
+          <li><div class="pck">✓</div>Clean, modern layout</li>
+          <li><div class="pck">✓</div>Contact section</li>
+          <li><div class="pck">✓</div>Delivered in 3–5 days</li>
+          <li><div class="pck">✓</div>WhatsApp support</li>
+          <li class="dim"><div class="pck">–</div>WhatsApp chat integration</li>
+          <li class="dim"><div class="pck">–</div>Animations & effects</li>
+        </ul>
+        <button class="plan-btn outline" onclick="book('Website Development','Basic – R800')">Book via WhatsApp →</button>
+      </div>
+      <div class="plan feat">
+        <div class="plan-pop">Most Popular</div>
+        <span class="plan-ico">🌐</span>
+        <div class="plan-tier">Standard</div>
+        <div class="plan-price"><sup>R</sup>1,500</div>
+        <div class="plan-note">One-time payment</div>
+        <div class="plan-desc">A full professional website with WhatsApp integration, contact form and smooth scroll animations.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>3–5 pages</li>
+          <li><div class="pck">✓</div>Mobile-friendly design</li>
+          <li><div class="pck">✓</div>Professional layout</li>
+          <li><div class="pck">✓</div>WhatsApp chat integration</li>
+          <li><div class="pck">✓</div>Contact form</li>
+          <li><div class="pck">✓</div>Scroll animations</li>
+          <li><div class="pck">✓</div>SEO-ready structure</li>
+          <li><div class="pck">✓</div>Delivered in 5–7 days</li>
+        </ul>
+        <button class="plan-btn solid" onclick="book('Website Development','Standard – R1,500')">Book via WhatsApp →</button>
+      </div>
+      <div class="plan">
+        <span class="plan-ico">🌐</span>
+        <div class="plan-tier">Premium</div>
+        <div class="plan-price"><sup>R</sup>3,000<sub>+</sub></div>
+        <div class="plan-note">Custom quote</div>
+        <div class="plan-desc">Fully bespoke, high-end digital experience with custom design, AI elements and advanced features.</div>
+        <ul class="plan-feats">
+          <li><div class="pck">✓</div>Unlimited pages</li>
+          <li><div class="pck">✓</div>Custom design & branding</li>
+          <li><div class="pck">✓</div>Advanced features & animations</li>
+          <li><div class="pck">✓</div>High-end UI/UX experience</li>
+          <li><div class="pck">✓</div>WhatsApp + email integration</li>
+          <li><div class="pck">✓</div>AI-powered elements</li>
+          <li><div class="pck">✓</div>Booking system included</li>
+          <li><div class="pck">✓</div>Priority delivery & support</li>
+        </ul>
+        <button class="plan-btn outline" onclick="book('Website Development','Premium – R3,000+')">Get Custom Quote →</button>
+      </div>
+    </div>
+    <div class="includes-strip rv">
+      <div class="inc-left"><div class="inc-ico">✅</div><div class="inc-txt"><h4>Every Plan Includes</h4><p>Custom design &nbsp;•&nbsp; WhatsApp integration &nbsp;•&nbsp; Full file delivery &nbsp;•&nbsp; Post-launch support</p></div></div>
+      <div class="inc-tags"><span class="inc-tag">50% Deposit</span><span class="inc-tag">You Own Everything</span><span class="inc-tag">3–14 Day Delivery</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="page-cta rv">
+  <div class="cta-inner">
+    <h2>Ready to <span>Get Started?</span></h2>
+    <p>WhatsApp us with the product and package you want. We'll reply within 24 hours with a quote and delivery timeline — no obligation.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/27677723822?text=Hi%20Synapse%20Systems!%20I%27d%20like%20to%20get%20started%20with%20one%20of%20your%20products." target="_blank" class="btn-p">💬 WhatsApp Us Now</a>
+      <a href="index.html#products" class="btn-o">← Back to Products</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fi">
+    <div class="fl">Synapse <span>Systems</span></div>
+    <div class="flinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#products">Products</a>
+      <a href="all-pricing.html" class="hl">Pricing</a>
+      <a href="pricing.html">Website Packages</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="business-card.html">Business Cards</a>
+    </div>
+    <div class="fc">© 2026 Synapse Systems — Connecting Intelligence.</div>
+  </div>
+</footer>
+
+  <script src="all-pricing.js"></script>
+</body>
+</html>

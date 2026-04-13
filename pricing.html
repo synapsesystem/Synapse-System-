@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Pricing & Booking — Synapse Systems</title>
+<meta name="description" content="Professional website packages starting from R800. Book your free consultation via WhatsApp today.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;0,800;1,700;1,800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="pricing.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="c-dot"></div>
+<div id="c-ring"></div>
+
+<!-- WA BUBBLE -->
+<a class="wa-bubble" href="https://wa.me/27677723822?text=Hi%20Synapse%20Systems!%20I%27d%20like%20to%20enquire%20about%20your%20website%20packages." target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.116 1.522 5.85L.057 23.27a.75.75 0 00.916.927l5.565-1.457A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.693 9.693 0 01-4.964-1.365l-.355-.212-3.683.965.983-3.586-.232-.369A9.693 9.693 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+  <span class="wa-tooltip">Chat with us</span>
+</a>
+
+<!-- BACK TOP -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobile-nav">
+  <button class="mnav-close" onclick="closeMobileNav()">✕</button>
+  <a href="index.html" onclick="closeMobileNav()">Home</a>
+  <a href="index.html#services" onclick="closeMobileNav()">Services</a>
+  <a href="index.html#products" onclick="closeMobileNav()">Products</a>
+  <a href="all-pricing.html" onclick="closeMobileNav()">All Pricing</a>
+  <a href="index.html#contact" onclick="closeMobileNav()">Contact</a>
+  <a href="#booking" class="nav-pill-mobile" onclick="closeMobileNav()">Book Now →</a>
+</nav>
+
+<!-- HEADER -->
+<header id="hdr">
+  <a href="index.html" class="logo">Synapse <span>Systems</span></a>
+  <nav class="header-nav">
+    <a href="index.html">Home</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#products">Products</a>
+    <a href="all-pricing.html">All Pricing</a>
+    <a href="#booking" class="nav-pill">Book Now</a>
+  </nav>
+  <div class="hright">
+    <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+    <button class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-radial"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <div class="eyebrow-dot"></div>
+      Website Packages — South Africa
+    </div>
+    <h1>
+      🧠⚡ Your Business,<br>
+      <span class="accent">Online.</span>
+      <span class="line2">Starting at R800.</span>
+    </h1>
+    <p class="hero-sub">
+      Professional, mobile-ready websites built for South African businesses.
+      <strong>No hidden fees.</strong> No long timelines. Just results.
+    </p>
+    <div class="hero-ctas">
+      <button class="btn-primary" onclick="scrollTo('pricing')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M9 5l7 7-7 7"/></svg>
+        View Packages
+      </button>
+      <button class="btn-ghost" onclick="scrollTo('booking')">Book a Free Consult</button>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <div class="scroll-cue-line"></div>
+    <div class="scroll-cue-label">Scroll</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TRUST STRIP
+     ═══════════════════════════════════════════ -->
+<div class="trust-strip">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="t-ico">⚡</span><strong>3–14 Days</strong>&nbsp;Delivery</div>
+    <div class="trust-item"><span class="t-ico">📱</span><strong>100%</strong>&nbsp;Mobile-First</div>
+    <div class="trust-item"><span class="t-ico">💳</span><strong>50%</strong>&nbsp;Deposit Only</div>
+    <div class="trust-item"><span class="t-ico">🚫</span><strong>Zero</strong>&nbsp;Subscriptions</div>
+    <div class="trust-item"><span class="t-ico">🇿🇦</span>South Africa&nbsp;<strong>Based</strong></div>
+    <div class="trust-item"><span class="t-ico">💬</span>WhatsApp&nbsp;<strong>Support</strong></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PRICING PLANS
+     ═══════════════════════════════════════════ -->
+<section class="sec" id="pricing">
+  <div class="inner">
+    <div class="plans-header rv">
+      <div>
+        <div class="sec-tag">Website Packages</div>
+        <h2 class="sec-title">Choose Your Plan</h2>
+        <p class="sec-sub">One-time payment. You own everything we build. No ongoing fees, no surprises.</p>
+      </div>
+      <a href="all-pricing.html" style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--or);display:inline-flex;align-items:center;gap:6px;transition:gap .3s;" onmouseover="this.style.gap='10px'" onmouseout="this.style.gap='6px'">View all product pricing →</a>
+    </div>
+
+    <div class="plans-grid">
+
+      <!-- BASIC -->
+      <div class="plan-card rv delay-1">
+        <div class="plan-tier-label">Basic</div>
+        <div class="plan-price-block">
+          <div class="plan-price">
+            <span class="currency">R</span>
+            <span class="amount">800</span>
+          </div>
+        </div>
+        <div class="plan-cycle">One-time payment &nbsp;·&nbsp; Delivered in 3–5 days</div>
+        <div class="plan-description">Perfect for freelancers, local shops, and anyone getting their business online for the first time.</div>
+        <ul class="plan-features">
+          <li><div class="feat-check">✓</div>1–3 Pages</li>
+          <li><div class="feat-check">✓</div>Mobile-Friendly Design</li>
+          <li><div class="feat-check">✓</div>Clean, Modern Layout</li>
+          <li><div class="feat-check">✓</div>Contact Section</li>
+          <li><div class="feat-check">✓</div>Delivered in 3–5 Days</li>
+          <li><div class="feat-check">✓</div>WhatsApp Support</li>
+          <li class="dim"><div class="feat-check">–</div>WhatsApp Chat Button</li>
+          <li class="dim"><div class="feat-check">–</div>Scroll Animations</li>
+          <li class="dim"><div class="feat-check">–</div>Contact Form</li>
+        </ul>
+        <button class="plan-cta ghost-cta" onclick="selectPlan('Basic – R800')">Get Started →</button>
+      </div>
+
+      <!-- STANDARD (featured) -->
+      <div class="plan-card featured rv delay-2">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-tier-label">Standard</div>
+        <div class="plan-price-block">
+          <div class="plan-price">
+            <span class="currency">R</span>
+            <span class="amount">1,500</span>
+          </div>
+        </div>
+        <div class="plan-cycle">One-time payment &nbsp;·&nbsp; Delivered in 5–7 days</div>
+        <div class="plan-description">The perfect balance for growing businesses that want a professional website that actually works hard for them.</div>
+        <ul class="plan-features">
+          <li><div class="feat-check">✓</div>3–5 Pages</li>
+          <li><div class="feat-check">✓</div>Mobile-Friendly Design</li>
+          <li><div class="feat-check">✓</div>Professional Layout & Branding</li>
+          <li><div class="feat-check">✓</div>WhatsApp Chat Integration</li>
+          <li><div class="feat-check">✓</div>Contact Form</li>
+          <li><div class="feat-check">✓</div>Smooth Scroll Animations</li>
+          <li><div class="feat-check">✓</div>SEO-Ready Structure</li>
+          <li><div class="feat-check">✓</div>Delivered in 5–7 Days</li>
+        </ul>
+        <button class="plan-cta primary-cta" onclick="selectPlan('Standard – R1,500')">Get Started →</button>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="plan-card rv delay-3">
+        <div class="plan-tier-label">Premium</div>
+        <div class="plan-price-block">
+          <div class="plan-price">
+            <span class="currency">R</span>
+            <span class="amount">3,000</span>
+            <span class="suffix">+</span>
+          </div>
+        </div>
+        <div class="plan-cycle">Custom quote &nbsp;·&nbsp; Priority delivery</div>
+        <div class="plan-description">For businesses that want to stand out completely — a fully bespoke, high-end digital experience with no limits.</div>
+        <ul class="plan-features">
+          <li><div class="feat-check">✓</div>Unlimited Pages</li>
+          <li><div class="feat-check">✓</div>Custom Design & Full Branding</li>
+          <li><div class="feat-check">✓</div>Advanced Features & Effects</li>
+          <li><div class="feat-check">✓</div>High-End UI/UX Experience</li>
+          <li><div class="feat-check">✓</div>WhatsApp + Email Integration</li>
+          <li><div class="feat-check">✓</div>AI-Powered Elements</li>
+          <li><div class="feat-check">✓</div>Booking System Included</li>
+          <li><div class="feat-check">✓</div>Priority Delivery & Support</li>
+        </ul>
+        <button class="plan-cta ghost-cta" onclick="selectPlan('Premium – R3,000+')">Get Custom Quote →</button>
+      </div>
+
+    </div>
+
+    <!-- Compare strip -->
+    <div class="compare-strip rv">
+      <div class="compare-left">
+        <div class="compare-ico">💡</div>
+        <div class="compare-text">
+          <p><strong>Not sure which package to choose?</strong> Book a free 30-minute consultation and we'll recommend the right package for your business and budget.</p>
+        </div>
+      </div>
+      <div class="compare-right">
+        <span class="c-tag">No Obligation</span>
+        <span class="c-tag">Free Consult</span>
+        <span class="c-tag">24hr Reply</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ADD-ONS
+     ═══════════════════════════════════════════ -->
+<section class="sec sec-alt" id="addons">
+  <div class="inner">
+    <div class="rv" style="margin-bottom:44px;">
+      <div class="sec-tag">Extras</div>
+      <h2 class="sec-title">Add-On Services</h2>
+      <p class="sec-sub">Supercharge any package with extras. All add-ons are one-time pricing unless noted.</p>
+    </div>
+    <div class="addons-grid">
+      <div class="addon-card rv delay-1">
+        <div class="addon-icon">🤖</div>
+        <div class="addon-info"><h4>AI Chat Widget</h4><p>Smart chatbot that answers visitor questions 24/7 even while you sleep.</p><div class="addon-price">From R400</div></div>
+      </div>
+      <div class="addon-card rv delay-2">
+        <div class="addon-icon">📅</div>
+        <div class="addon-info"><h4>Booking System</h4><p>Let clients schedule appointments directly on your website, 24/7.</p><div class="addon-price">From R500</div></div>
+      </div>
+      <div class="addon-card rv delay-3">
+        <div class="addon-icon">🛒</div>
+        <div class="addon-info"><h4>Online Store</h4><p>Sell products or services directly from your website with ease.</p><div class="addon-price">From R800</div></div>
+      </div>
+      <div class="addon-card rv delay-1">
+        <div class="addon-icon">🔍</div>
+        <div class="addon-info"><h4>SEO Optimisation</h4><p>Full keyword research and technical SEO to help Google find you faster.</p><div class="addon-price">From R600</div></div>
+      </div>
+      <div class="addon-card rv delay-2">
+        <div class="addon-icon">📊</div>
+        <div class="addon-info"><h4>Analytics Dashboard</h4><p>See who visits your site, where they come from, and what they click on.</p><div class="addon-price">From R300</div></div>
+      </div>
+      <div class="addon-card rv delay-3">
+        <div class="addon-icon">🔧</div>
+        <div class="addon-info"><h4>Monthly Maintenance</h4><p>We keep your site updated, fast, and running smoothly every month.</p><div class="addon-price">From R250 / month</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     HOW IT WORKS
+     ═══════════════════════════════════════════ -->
+<section class="sec" id="process">
+  <div class="inner">
+    <div class="rv" style="text-align:center;max-width:500px;margin:0 auto 56px;">
+      <div class="sec-tag">The Process</div>
+      <h2 class="sec-title">How We Build<br>Your Website</h2>
+    </div>
+    <div class="timeline rv">
+      <div class="timeline-step">
+        <div class="tl-num"><span>01</span></div>
+        <div class="tl-title">Book a Consult</div>
+        <p class="tl-desc">Fill in the booking form or WhatsApp us directly. We reply within 24 hours.</p>
+      </div>
+      <div class="timeline-step">
+        <div class="tl-num"><span>02</span></div>
+        <div class="tl-title">Share Your Vision</div>
+        <p class="tl-desc">Tell us about your business, your goals, and what style you're drawn to.</p>
+      </div>
+      <div class="timeline-step">
+        <div class="tl-num"><span>03</span></div>
+        <div class="tl-title">We Build It</div>
+        <p class="tl-desc">We design and develop your site. You see it before it goes live — no surprises.</p>
+      </div>
+      <div class="timeline-step">
+        <div class="tl-num"><span>04</span></div>
+        <div class="tl-title">Go Live 🚀</div>
+        <p class="tl-desc">Your site is deployed, fully tested, and you receive all your files. You own it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FAQ
+     ═══════════════════════════════════════════ -->
+<section class="sec sec-alt" id="faq">
+  <div class="inner">
+    <div class="faq-layout">
+      <div class="faq-sidebar rv">
+        <div class="sec-tag">Questions</div>
+        <h3>Frequently<br>Asked</h3>
+        <p>Have a question that's not listed? WhatsApp us directly — we respond within a few hours.</p>
+        <button class="faq-wa-btn" onclick="window.open('https://wa.me/27677723822?text=Hi%20I%20have%20a%20question%20about%20your%20website%20packages','_blank')">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.116 1.522 5.85L.057 23.27a.75.75 0 00.916.927l5.565-1.457A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.693 9.693 0 01-4.964-1.365l-.355-.212-3.683.965.983-3.586-.232-.369A9.693 9.693 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          Ask on WhatsApp
+        </button>
+      </div>
+      <div class="faq-list rv">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-text">How long does it take to build my website?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">Basic sites are typically ready in 3–5 days. Standard packages take 5–7 days. Premium projects are scoped individually — usually 1–2 weeks depending on the complexity and number of pages.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-text">Do I pay everything upfront?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">We require a 50% deposit to begin work, with the remaining balance due when your site is complete and you're happy with it. For Premium projects, a custom payment plan can be arranged.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-text">Will my website work on mobile phones?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">Absolutely. Every website we build is fully responsive and tested across phones, tablets, and desktops. We design mobile-first — because most of your customers visit on their phones.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-text">Can I update the website myself after delivery?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">Yes. You receive all your website files and can make basic edits yourself. We also offer monthly maintenance packages if you'd prefer to leave all updates to us.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-text">Do I need to buy hosting?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">We recommend Netlify for free hosting and guide you through setting it up — it's completely free for standard websites. Domain registration is separate and costs around R150–R200 per year.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-text">What do I need to provide to get started?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">Just your business info, logo (if you have one), any photos or content you want included, and a rough idea of what you need. We'll guide you through everything else in your free consultation.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     BOOKING FORM
+     ═══════════════════════════════════════════ -->
+<section class="booking-section" id="booking">
+  <div class="booking-layout">
+
+    <!-- Left info -->
+    <div class="booking-info rv">
+      <div class="sec-tag">Book a Free Consult</div>
+      <h2 class="sec-title">Let's Build<br>Something Great</h2>
+      <p class="sec-sub">Fill in the form and your details go straight to our WhatsApp. We respond within 24 hours with a quote and delivery timeline.</p>
+
+      <div class="booking-perks">
+        <div class="perk">
+          <div class="perk-ico">🎯</div>
+          <div class="perk-text">
+            <h4>Free Strategy Call</h4>
+            <p>30-minute consultation to understand your business and recommend the right package.</p>
+          </div>
+        </div>
+        <div class="perk">
+          <div class="perk-ico">💬</div>
+          <div class="perk-text">
+            <h4>Direct WhatsApp Reply</h4>
+            <p>No email forms that get lost. Your booking goes straight to our WhatsApp.</p>
+          </div>
+        </div>
+        <div class="perk">
+          <div class="perk-ico">📋</div>
+          <div class="perk-text">
+            <h4>Custom Quote</h4>
+            <p>You'll receive a clear, itemised quote with a delivery timeline — no obligation to proceed.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-trust">
+        <div class="bt-ico">🔒</div>
+        <div class="bt-text">
+          <p><strong>50% deposit to start.</strong> Balance only due when you're happy with the finished site. You own everything we build — no lock-ins.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right form -->
+    <div class="rv">
+      <div class="booking-form-wrap">
+        <div class="form-header">
+          <h3>Book Your Consultation</h3>
+          <p>Takes less than 2 minutes to fill in</p>
+          <div class="form-step-indicator">
+            <div class="step-dot active"></div>
+            <div class="step-dot active"></div>
+            <div class="step-dot active"></div>
+          </div>
+        </div>
+        <div class="form-body">
+          <div class="field-row">
+            <div class="field-group">
+              <label class="field-label" for="f-name">Your Name *</label>
+              <input class="field-input" type="text" id="f-name" placeholder="e.g. Thabo Dlamini" autocomplete="name">
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="f-phone">Phone / WhatsApp *</label>
+              <input class="field-input" type="tel" id="f-phone" placeholder="e.g. 082 000 0000" autocomplete="tel">
+            </div>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="f-biz">Business Name</label>
+            <input class="field-input" type="text" id="f-biz" placeholder="e.g. Thabo's Barber Shop" autocomplete="organization">
+          </div>
+          <div class="field-group" style="margin-bottom:14px;">
+            <label class="field-label" for="f-plan">Package You're Interested In *</label>
+            <select class="field-input" id="f-plan">
+              <option value="" disabled selected>Select a package</option>
+              <option value="Basic – R800">🌐 Basic — R800</option>
+              <option value="Standard – R1,500">💼 Standard — R1,500 (Most Popular)</option>
+              <option value="Premium – R3,000+">🚀 Premium — R3,000+</option>
+              <option value="Not Sure Yet">🤔 Not Sure Yet — Need Advice</option>
+            </select>
+          </div>
+          <div class="field-group" style="margin-bottom:18px;">
+            <label class="field-label" for="f-msg">Tell Us About Your Project</label>
+            <textarea class="field-input" id="f-msg" placeholder="What does your business do? What do you want your website to achieve? Any specific features in mind?"></textarea>
+          </div>
+          <button class="wa-submit-btn" onclick="sendToWhatsApp()">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.116 1.522 5.85L.057 23.27a.75.75 0 00.916.927l5.565-1.457A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.693 9.693 0 01-4.964-1.365l-.355-.212-3.683.965.983-3.586-.232-.369A9.693 9.693 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+            Send Booking via WhatsApp
+          </button>
+          <p class="form-disclaimer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            Opens WhatsApp with your details pre-filled. No email needed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PAGE CTA
+     ═══════════════════════════════════════════ -->
+<div class="page-cta rv">
+  <div class="page-cta-inner">
+    <h2>Ready to Get<br><em>Online Today?</em></h2>
+    <p>Join South African businesses already running on Synapse Systems websites. Fast delivery, professional design, and WhatsApp-first support every step of the way.</p>
+    <div class="page-cta-btns">
+      <button class="btn-primary" onclick="scrollTo('booking')">💬 Book Your Free Consult</button>
+      <a href="all-pricing.html" class="btn-ghost">View All Products →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Synapse <span>Systems</span></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#products">Products</a>
+      <a href="all-pricing.html">All Pricing</a>
+      <a href="pricing.html" class="active">Website Pricing</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="business-card.html">Business Cards</a>
+    </div>
+    <div class="footer-right">
+      <div class="footer-copy">© 2026 Synapse Systems — Connecting Intelligence.</div>
+    </div>
+  </div>
+</footer>
+
+  <script src="pricing.js"></script>
+</body>
+</html>
